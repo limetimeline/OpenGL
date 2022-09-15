@@ -1,1 +1,1 @@
-[!sss][/openGL.png]
+![sss](/openGL.png)
