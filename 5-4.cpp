@@ -8,20 +8,20 @@ void MyDisplay() {
 	glColor3f(1.0, 1.0, 1.0);
 	glutWireCube(0.5);
 
-	glRotatef(45, 1.0, 1.0, 1.0);
+	glRotatef(10, 1.0, 1.0, 1.0);
 	glViewport(300, 300, 300, 300);
 	glColor3f(1.0, 1.0, 0.0);
-	glutWireCone(0.5,1,10,10);
+	glutWireCone(0.5, 1, 10, 10);
 
-	glRotatef(45, 1.0, 1.0, 1.0);
+	glRotatef(-10, 1.0, 1.0, 1.0);
 	glViewport(0, 300, 300, 300);
 	glColor3f(1.0, 0.0, 0.0);
-	glutWireSphere(0.5, 10, 10);
+	glutWireSphere(0.5, 20, 10);
 
-	glRotatef(200, 1.0, 1.0, 1.0);
+	glRotatef(-5, 1.0, 1.0, 1.0);
 	glViewport(300, 0, 300, 300);
 	glColor3f(0.0, 1.0, 0.0);
-	glutWireTorus(0.2, 0.4, 10 ,10);
+	glutWireTorus(0.2, 0.5, 20, 20);
 
 
 
