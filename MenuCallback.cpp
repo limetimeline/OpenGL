@@ -3,7 +3,7 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 
-bool IsSphere=true;
+bool IsSphere = true;
 bool IsTorus;
 bool IsTeapot;
 
@@ -39,9 +39,9 @@ void MyMainMenu1(int entryID) {
 		IsTeapot = false;
 	}
 	else {
-		IsTeapot = true;
+		IsTorus = false;
 		IsSphere = false;
-		IsTeapot = false;
+		IsTeapot = true;
 	}
 	glutPostRedisplay();
 }
@@ -49,12 +49,13 @@ void MyMainMenu1(int entryID) {
 void MyMainMenu2(int entryID) {
 	if (entryID == 1)
 	{
+		glRotatef(30.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else if (entryID == 2) {
-
+		glTranslatef(0.2f, 0.0f, 0.0f);
 	}
 	else {
-		scale += 0.1;
+		scale *= 2;
 	}
 	glutPostRedisplay();
 }
@@ -67,7 +68,7 @@ int main() {
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
-	
+
 	GLint MyMainMenuID1 = glutCreateMenu(MyMainMenu1);
 	glutSetMenu(MyMainMenuID1);
 	glutAddMenuEntry("Draw Sphere", 1);
