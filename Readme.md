@@ -12,4 +12,6 @@
 - GeometryTranslation (GeometryTranslation.cpp)   
 ![GeometryTranslation](/images/GeometryTranslation.png)
 - GT_Stack (GT_Stack.cpp)   
-![GT_Stack](/images/GT_Stack.png)
+![GT_Stack](/images/GT_Stack.png)    
+- gluLookAt (gluLookAt.cpp)
+![gluLookAt](/images/GluLookAt.png)
