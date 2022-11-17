@@ -19,3 +19,5 @@
 ![PreventDistortion](/images/PreventDistortion.png)   
 - Clip with planes (ClipPlane.cpp)
 ![ClipPlane](/images/ClipPlane.png)
+- Illumination (Illumination.cpp)
+![Illumination](/images/Illumination.png)
